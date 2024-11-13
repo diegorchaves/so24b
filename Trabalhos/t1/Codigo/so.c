@@ -394,22 +394,27 @@ static void so_trata_pendencias(so_t * self)
     }
 }
 
+static int so_deve_escalonar(so_t *self)
+{
+    if(!processo_esta_vivo(self->processo_corrente))
+        return 1;
+
+    if(processo_esta_bloqueado(self->processo_corrente))
+        return 1;
+
+    if(self->quantum <= 0)
+        return 1;
+
+    return 0;
+}
+
 static void so_escalona(so_t * self)
 {
-    // escolhe o próximo processo a executar, que passa a ser o processo
-    //   corrente; pode continuar sendo o mesmo de antes ou não
-    // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
-    //   executando. depois, implementar escalonador melhor
-    if(!processo_esta_vivo(self->processo_corrente) || processo_esta_bloqueado(self->processo_corrente) || self->quantum == 0) {
-        /* for(int i = 0; i < QUANTIDADE_PROCESSOS; i++) {
-            processo_t *processo = &self->tabela_processos[i];
-            if(processo_esta_vivo(processo) && !processo_esta_bloqueado(processo)) {
-                self->processo_corrente = processo;
-                
-                return;
-            }
-        } */
-       if(processo_esta_vivo(self->processo_corrente) && !processo_esta_bloqueado(self->processo_corrente) && self->quantum == 0) {
+    if(!so_deve_escalonar(self)) {
+        return;
+    }
+    else {
+       if(processo_esta_vivo(self->processo_corrente) && !processo_esta_bloqueado(self->processo_corrente) && self->quantum <= 0) {
             tira_processo_fila(self, self->processo_corrente->pid_processo);
             coloca_processo_fila(self, self->processo_corrente);
        }
@@ -417,9 +422,8 @@ static void so_escalona(so_t * self)
             self->processo_corrente = self->fila_processos;
             tira_processo_fila(self, self->processo_corrente->pid_processo);
        }
-       self->quantum = QUANTUM;
+       self->quantum = QUANTUM;    
     }
-
 }
 
 static int so_despacha(so_t * self)
