@@ -6,9 +6,15 @@
 #ifndef SO_H
 #define SO_H
 
-typedef struct so_t so_t;
-typedef struct porta_t porta_t;
+typedef enum {
+    BLOQUEIO_ESC        = 1,
+    BLOQUEIO_LE         = 2,
+    BLOQUEIO_ESPERA     = 3
+} bloqueio_id;
+
+typedef struct terminal_t terminal_t;
 typedef struct processo_t processo_t;
+typedef struct so_t so_t;
 
 #include "memoria.h"
 #include "cpu.h"
