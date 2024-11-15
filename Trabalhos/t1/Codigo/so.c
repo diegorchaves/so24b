@@ -9,23 +9,28 @@
 #include "irq.h"
 #include "programa.h"
 #include "instrucao.h"
+#include "processo.h"
 
 #include <stdlib.h>
 #include <stdbool.h>
 
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
-#define INTERVALO_INTERRUPCAO 50   // em instruções executadas
+#define INTERVALO_INTERRUPCAO 50 // em instruções executadas
 
-struct so_t {
+#define QUANTIDADE_PROCESSOS 4
+
+struct so_t
+{
   cpu_t *cpu;
   mem_t *mem;
   es_t *es;
   console_t *console;
   bool erro_interno;
   // t1: tabela de processos, processo corrente, pendências, etc
+  processo_t tabela_processos[QUANTIDADE_PROCESSOS];
+  processo_t *processo_corrente;
 };
-
 
 // função de tratamento de interrupção (entrada no SO)
 static int so_trata_interrupcao(void *argC, int reg_A);
@@ -38,10 +43,21 @@ static bool copia_str_da_mem(int tam, char str[tam], mem_t *mem, int ender);
 
 // CRIAÇÃO {{{1
 
+err_t inicializa_tabela_processos(so_t *self)
+{
+  for(int i = 0; i < QUANTIDADE_PROCESSOS; i++)
+  {
+    self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
+    self->tabela_processos[i].porta_processo = NULL;
+  }
+  return ERR_OK;
+}
+
 so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
 {
   so_t *self = malloc(sizeof(*self));
-  if (self == NULL) return NULL;
+  if (self == NULL)
+    return NULL;
 
   self->cpu = cpu;
   self->mem = mem;
@@ -49,26 +65,34 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->console = console;
   self->erro_interno = false;
 
+  if(inicializa_tabela_processos(self) != ERR_OK)
+  {
+    console_printf("SO: falha ao inicializar a tabela de processos");
+    self->erro_interno = true;
+  }
+
   // quando a CPU executar uma instrução CHAMAC, deve chamar a função
   //   so_trata_interrupcao, com primeiro argumento um ptr para o SO
   cpu_define_chamaC(self->cpu, so_trata_interrupcao, self);
 
   // coloca o tratador de interrupção na memória
-  // quando a CPU aceita uma interrupção, passa para modo supervisor, 
+  // quando a CPU aceita uma interrupção, passa para modo supervisor,
   //   salva seu estado à partir do endereço 0, e desvia para o endereço
   //   IRQ_END_TRATADOR
   // colocamos no endereço IRQ_END_TRATADOR o programa de tratamento
-  //   de interrupção (escrito em asm). esse programa deve conter a 
+  //   de interrupção (escrito em asm). esse programa deve conter a
   //   instrução CHAMAC, que vai chamar so_trata_interrupcao (como
   //   foi definido acima)
   int ender = so_carrega_programa(self, "trata_int.maq");
-  if (ender != IRQ_END_TRATADOR) {
+  if (ender != IRQ_END_TRATADOR)
+  {
     console_printf("SO: problema na carga do programa de tratamento de interrupção");
     self->erro_interno = true;
   }
 
   // programa o relógio para gerar uma interrupção após INTERVALO_INTERRUPCAO
-  if (es_escreve(self->es, D_RELOGIO_TIMER, INTERVALO_INTERRUPCAO) != ERR_OK) {
+  if (es_escreve(self->es, D_RELOGIO_TIMER, INTERVALO_INTERRUPCAO) != ERR_OK)
+  {
     console_printf("SO: problema na programação do timer");
     self->erro_interno = true;
   }
@@ -81,7 +105,6 @@ void so_destroi(so_t *self)
   cpu_define_chamaC(self->cpu, NULL, NULL);
   free(self);
 }
-
 
 // TRATAMENTO DE INTERRUPÇÃO {{{1
 
@@ -130,6 +153,35 @@ static void so_salva_estado_da_cpu(so_t *self)
   //   processo corrente. os valores dos registradores foram colocados pela
   //   CPU na memória, nos endereços IRQ_END_*
   // se não houver processo corrente, não faz nada
+  bool deu_erro;
+
+  if(self->processo_corrente == NULL) {
+    return;
+  } else {
+    if(mem_le(self->mem, IRQ_END_A, &self->processo_corrente->reg_A) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_le(self->mem, IRQ_END_X, &self->processo_corrente->reg_X) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_le(self->mem, IRQ_END_PC, &self->processo_corrente->reg_PC) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_le(self->mem, IRQ_END_erro, &self->processo_corrente->reg_erro) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_le(self->mem, IRQ_END_complemento, &self->processo_corrente->reg_complemento) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_le(self->mem, IRQ_END_modo, &self->processo_corrente->modo) != ERR_OK) {
+      deu_erro = true;
+    }
+
+    if(deu_erro) {
+      console_printf("SO: erro ao salvar o estado da CPU");
+      self->erro_interno = true;
+    }
+  }
 }
 
 static void so_trata_pendencias(so_t *self)
@@ -154,8 +206,36 @@ static int so_despacha(so_t *self)
   // t1: se houver processo corrente, coloca o estado desse processo onde ele
   //   será recuperado pela CPU (em IRQ_END_*) e retorna 0, senão retorna 1
   // o valor retornado será o valor de retorno de CHAMAC
-  if (self->erro_interno) return 1;
-  else return 0;
+  bool deu_erro;
+  
+  if(self->erro_interno) {
+    return 1;
+  } else {
+    if(mem_escreve(self->mem, IRQ_END_A, self->processo_corrente->reg_A) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_escreve(self->mem, IRQ_END_X, self->processo_corrente->reg_X) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_escreve(self->mem, IRQ_END_PC, self->processo_corrente->reg_PC) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_escreve(self->mem, IRQ_END_erro, self->processo_corrente->reg_erro) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_escreve(self->mem, IRQ_END_complemento, self->processo_corrente->reg_complemento) != ERR_OK) {
+      deu_erro = true;
+    }
+    if(mem_escreve(self->mem, IRQ_END_modo, self->processo_corrente->modo) != ERR_OK) {
+      deu_erro = true;
+    }
+
+    if(deu_erro) {
+      return 1;
+    } else {
+      return 0;   // deu tudo certo
+    }
+  }
 }
 
 // TRATAMENTO DE UMA IRQ {{{1
@@ -170,21 +250,22 @@ static void so_trata_irq_desconhecida(so_t *self, int irq);
 static void so_trata_irq(so_t *self, int irq)
 {
   // verifica o tipo de interrupção que está acontecendo, e atende de acordo
-  switch (irq) {
-    case IRQ_RESET:
-      so_trata_irq_reset(self);
-      break;
-    case IRQ_SISTEMA:
-      so_trata_irq_chamada_sistema(self);
-      break;
-    case IRQ_ERR_CPU:
-      so_trata_irq_err_cpu(self);
-      break;
-    case IRQ_RELOGIO:
-      so_trata_irq_relogio(self);
-      break;
-    default:
-      so_trata_irq_desconhecida(self, irq);
+  switch (irq)
+  {
+  case IRQ_RESET:
+    so_trata_irq_reset(self);
+    break;
+  case IRQ_SISTEMA:
+    so_trata_irq_chamada_sistema(self);
+    break;
+  case IRQ_ERR_CPU:
+    so_trata_irq_err_cpu(self);
+    break;
+  case IRQ_RELOGIO:
+    so_trata_irq_relogio(self);
+    break;
+  default:
+    so_trata_irq_desconhecida(self, irq);
   }
 }
 
@@ -200,7 +281,8 @@ static void so_trata_irq_reset(so_t *self)
 
   // coloca o programa init na memória
   int ender = so_carrega_programa(self, "init.maq");
-  if (ender != 100) {
+  if (ender != 100)
+  {
     console_printf("SO: problema na carga do programa inicial");
     self->erro_interno = true;
     return;
@@ -236,7 +318,8 @@ static void so_trata_irq_relogio(so_t *self)
   err_t e1, e2;
   e1 = es_escreve(self->es, D_RELOGIO_INTERRUPCAO, 0); // desliga o sinalizador de interrupção
   e2 = es_escreve(self->es, D_RELOGIO_TIMER, INTERVALO_INTERRUPCAO);
-  if (e1 != ERR_OK || e2 != ERR_OK) {
+  if (e1 != ERR_OK || e2 != ERR_OK)
+  {
     console_printf("SO: problema da reinicialização do timer");
     self->erro_interno = true;
   }
@@ -267,32 +350,34 @@ static void so_trata_irq_chamada_sistema(so_t *self)
   // a identificação da chamada está no registrador A
   // t1: com processos, o reg A tá no descritor do processo corrente
   int id_chamada;
-  if (mem_le(self->mem, IRQ_END_A, &id_chamada) != ERR_OK) {
+  if (mem_le(self->mem, IRQ_END_A, &id_chamada) != ERR_OK)
+  {
     console_printf("SO: erro no acesso ao id da chamada de sistema");
     self->erro_interno = true;
     return;
   }
   console_printf("SO: chamada de sistema %d", id_chamada);
-  switch (id_chamada) {
-    case SO_LE:
-      so_chamada_le(self);
-      break;
-    case SO_ESCR:
-      so_chamada_escr(self);
-      break;
-    case SO_CRIA_PROC:
-      so_chamada_cria_proc(self);
-      break;
-    case SO_MATA_PROC:
-      so_chamada_mata_proc(self);
-      break;
-    case SO_ESPERA_PROC:
-      so_chamada_espera_proc(self);
-      break;
-    default:
-      console_printf("SO: chamada de sistema desconhecida (%d)", id_chamada);
-      // t1: deveria matar o processo
-      self->erro_interno = true;
+  switch (id_chamada)
+  {
+  case SO_LE:
+    so_chamada_le(self);
+    break;
+  case SO_ESCR:
+    so_chamada_escr(self);
+    break;
+  case SO_CRIA_PROC:
+    so_chamada_cria_proc(self);
+    break;
+  case SO_MATA_PROC:
+    so_chamada_mata_proc(self);
+    break;
+  case SO_ESPERA_PROC:
+    so_chamada_espera_proc(self);
+    break;
+  default:
+    console_printf("SO: chamada de sistema desconhecida (%d)", id_chamada);
+    // t1: deveria matar o processo
+    self->erro_interno = true;
   }
 }
 
@@ -309,14 +394,17 @@ static void so_chamada_le(so_t *self)
   //     o caso
   // implementação lendo direto do terminal A
   //   T1: deveria usar dispositivo de entrada corrente do processo
-  for (;;) {
+  for (;;)
+  {
     int estado;
-    if (es_le(self->es, D_TERM_A_TECLADO_OK, &estado) != ERR_OK) {
+    if (es_le(self->es, D_TERM_A_TECLADO_OK, &estado) != ERR_OK)
+    {
       console_printf("SO: problema no acesso ao estado do teclado");
       self->erro_interno = true;
       return;
     }
-    if (estado != 0) break;
+    if (estado != 0)
+      break;
     // como não está saindo do SO, a unidade de controle não está executando seu laço.
     // esta gambiarra faz pelo menos a console ser atualizada
     // T1: com a implementação de bloqueio de processo, esta gambiarra não
@@ -324,7 +412,8 @@ static void so_chamada_le(so_t *self)
     console_tictac(self->console);
   }
   int dado;
-  if (es_le(self->es, D_TERM_A_TECLADO, &dado) != ERR_OK) {
+  if (es_le(self->es, D_TERM_A_TECLADO, &dado) != ERR_OK)
+  {
     console_printf("SO: problema no acesso ao teclado");
     self->erro_interno = true;
     return;
@@ -345,14 +434,17 @@ static void so_chamada_escr(so_t *self)
   //   T1: deveria bloquear o processo se dispositivo ocupado
   // implementação escrevendo direto do terminal A
   //   T1: deveria usar o dispositivo de saída corrente do processo
-  for (;;) {
+  for (;;)
+  {
     int estado;
-    if (es_le(self->es, D_TERM_A_TELA_OK, &estado) != ERR_OK) {
+    if (es_le(self->es, D_TERM_A_TELA_OK, &estado) != ERR_OK)
+    {
       console_printf("SO: problema no acesso ao estado da tela");
       self->erro_interno = true;
       return;
     }
-    if (estado != 0) break;
+    if (estado != 0)
+      break;
     // como não está saindo do SO, a unidade de controle não está executando seu laço.
     // esta gambiarra faz pelo menos a console ser atualizada
     // T1: não deve mais existir quando houver suporte a processos, porque o SO não poderá
@@ -365,7 +457,8 @@ static void so_chamada_escr(so_t *self)
   // T1: caso o processo tenha sido bloqueado, esse acesso deve ser realizado em outra execução
   //   do SO, quando ele verificar que esse acesso já pode ser feito.
   mem_le(self->mem, IRQ_END_X, &dado);
-  if (es_escreve(self->es, D_TERM_A_TELA, dado) != ERR_OK) {
+  if (es_escreve(self->es, D_TERM_A_TELA, dado) != ERR_OK)
+  {
     console_printf("SO: problema no acesso à tela");
     self->erro_interno = true;
     return;
@@ -384,11 +477,14 @@ static void so_chamada_cria_proc(so_t *self)
   // em X está o endereço onde está o nome do arquivo
   int ender_proc;
   // t1: deveria ler o X do descritor do processo criador
-  if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK) {
+  if (mem_le(self->mem, IRQ_END_X, &ender_proc) == ERR_OK)
+  {
     char nome[100];
-    if (copia_str_da_mem(100, nome, self->mem, ender_proc)) {
+    if (copia_str_da_mem(100, nome, self->mem, ender_proc))
+    {
       int ender_carga = so_carrega_programa(self, nome);
-      if (ender_carga > 0) {
+      if (ender_carga > 0)
+      {
         // t1: deveria escrever no PC do descritor do processo criado
         mem_escreve(self->mem, IRQ_END_PC, ender_carga);
         return;
@@ -428,7 +524,8 @@ static int so_carrega_programa(so_t *self, char *nome_do_executavel)
 {
   // programa para executar na nossa CPU
   programa_t *prog = prog_cria(nome_do_executavel);
-  if (prog == NULL) {
+  if (prog == NULL)
+  {
     console_printf("Erro na leitura do programa '%s'\n", nome_do_executavel);
     return -1;
   }
@@ -436,8 +533,10 @@ static int so_carrega_programa(so_t *self, char *nome_do_executavel)
   int end_ini = prog_end_carga(prog);
   int end_fim = end_ini + prog_tamanho(prog);
 
-  for (int end = end_ini; end < end_fim; end++) {
-    if (mem_escreve(self->mem, end, prog_dado(prog, end)) != ERR_OK) {
+  for (int end = end_ini; end < end_fim; end++)
+  {
+    if (mem_escreve(self->mem, end, prog_dado(prog, end)) != ERR_OK)
+    {
       console_printf("Erro na carga da memória, endereco %d\n", end);
       return -1;
     }
@@ -456,16 +555,20 @@ static int so_carrega_programa(so_t *self, char *nome_do_executavel)
 // T1: deveria verificar se a memória pertence ao processo
 static bool copia_str_da_mem(int tam, char str[tam], mem_t *mem, int ender)
 {
-  for (int indice_str = 0; indice_str < tam; indice_str++) {
+  for (int indice_str = 0; indice_str < tam; indice_str++)
+  {
     int caractere;
-    if (mem_le(mem, ender + indice_str, &caractere) != ERR_OK) {
+    if (mem_le(mem, ender + indice_str, &caractere) != ERR_OK)
+    {
       return false;
     }
-    if (caractere < 0 || caractere > 255) {
+    if (caractere < 0 || caractere > 255)
+    {
       return false;
     }
     str[indice_str] = caractere;
-    if (caractere == 0) {
+    if (caractere == 0)
+    {
       return true;
     }
   }
