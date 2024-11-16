@@ -19,6 +19,7 @@
 #define INTERVALO_INTERRUPCAO 50 // em instruções executadas
 
 #define QUANTIDADE_PROCESSOS 4
+#define QUANTUM 10
 
 struct so_t
 {
@@ -30,6 +31,9 @@ struct so_t
   // t1: tabela de processos, processo corrente, pendências, etc
   processo_t tabela_processos[QUANTIDADE_PROCESSOS];
   processo_t *processo_corrente;
+
+  processo_t *fila_processos;
+  int quantum;
 };
 
 // função de tratamento de interrupção (entrada no SO)
@@ -193,12 +197,71 @@ static void so_trata_pendencias(so_t *self)
   // - contabilidades
 }
 
+static void atualiza_prioridade(so_t *self, processo_t *processo)
+{
+  double t_exec = QUANTUM - self->quantum;
+  double prio = processo->prioridade + (t_exec/QUANTUM);
+  prio /= 2.0;
+
+  processo->prioridade = prio;
+}
+
+static int so_precisa_escalonar(so_t *self)
+{
+  if(self->processo_corrente == NULL)
+    return 1;
+
+  if(self->processo_corrente->estado_processo == ESTADO_PROC_MORTO)
+    return 1;
+
+  if(self->processo_corrente->estado_processo == ESTADO_PROC_BLOQUEADO) {
+    atualiza_prioridade(self, self->processo_corrente);
+    return 1;
+  }
+
+  if(self->quantum <= 0) {
+    self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
+    atualiza_prioridade(self, self->processo_corrente);
+    return 1;
+  }
+}
+
+static err_t atualiza_fila(so_t *self)
+{
+  self->fila_processos = NULL;    // reseta a fila
+
+  for(int i = 0; i < QUANTIDADE_PROCESSOS; i++) {
+    processo_t *p = &self->tabela_processos[i];
+    if(p->estado_processo == ESTADO_PROC_PRONTO) {
+      coloca_proc_fila(self->fila_processos, p);
+    }
+  }
+  return ERR_OK;
+}
+
 static void so_escalona(so_t *self)
 {
   // escolhe o próximo processo a executar, que passa a ser o processo
   //   corrente; pode continuar sendo o mesmo de antes ou não
   // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
   //   executando. depois, implementar escalonador melhor
+
+  if(!so_precisa_escalonar(self)) {
+    return;
+  } else {
+    if(atualiza_fila(self) != ERR_OK) {
+      self->erro_interno = true;
+      return;
+    } else {
+      self->processo_corrente = pega_maior_prioridade(self);
+    }
+  }
+
+  if(self->processo_corrente == NULL) {
+    self->erro_interno = true;
+  } else {
+    self->erro_interno = false;
+  }
 }
 
 static int so_despacha(so_t *self)
