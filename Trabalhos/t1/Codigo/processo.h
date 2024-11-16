@@ -22,6 +22,8 @@ struct processo_t
   porta_t *porta_processo;
 
   processo_t *prox_processo;
+
+  double prioridade;
 };
 
 typedef enum
