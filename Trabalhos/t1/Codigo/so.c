@@ -224,6 +224,22 @@ static int so_precisa_escalonar(so_t *self)
     atualiza_prioridade(self, self->processo_corrente);
     return 1;
   }
+
+  return 0;
+}
+
+static void coloca_processo_fila(so_t *self, processo_t *processo)
+{
+    if(self->fila_processos == NULL) {
+        self->fila_processos = processo;
+    } else {
+        processo_t *andarilho = self->fila_processos;
+        while(andarilho->prox_processo != NULL) {
+            andarilho = andarilho->prox_processo;
+        }
+        andarilho->prox_processo = processo;
+    }
+    processo->prox_processo = NULL;
 }
 
 static err_t atualiza_fila(so_t *self)
@@ -233,7 +249,7 @@ static err_t atualiza_fila(so_t *self)
   for(int i = 0; i < QUANTIDADE_PROCESSOS; i++) {
     processo_t *p = &self->tabela_processos[i];
     if(p->estado_processo == ESTADO_PROC_PRONTO) {
-      coloca_proc_fila(self->fila_processos, p);
+      coloca_processo_fila(self, p);
     }
   }
   return ERR_OK;
