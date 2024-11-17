@@ -12,6 +12,7 @@ struct porta_t
 
 struct processo_t
 {
+  int pid_processo;
   int reg_A;
   int reg_X;
   int reg_PC;
@@ -19,6 +20,8 @@ struct processo_t
   int reg_complemento;
   int modo;
   int estado_processo;
+  int bloqueio_motivo;
+  int pid_esperado;
   porta_t *porta_processo;
 
   processo_t *prox_processo;
@@ -33,3 +36,9 @@ typedef enum
     ESTADO_PROC_BLOQUEADO   = 3,
     ESTADO_PROC_EXECUTANDO  = 4
 } estado_processo_id;
+
+typedef enum {
+  BLOQUEIO_ESC        = 1,
+  BLOQUEIO_LE         = 2,
+  BLOQUEIO_ESPERA     = 3
+} bloqueio_id;
