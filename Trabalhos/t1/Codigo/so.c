@@ -257,8 +257,7 @@ static void so_trata_pendencias(so_t *self)
 static void atualiza_prioridade(so_t *self, processo_t *processo)
 {
   double t_exec = QUANTUM - self->quantum;
-  double prio = processo->prioridade + (t_exec / QUANTUM);
-  prio /= 2.0;
+  double prio = (processo->prioridade - (t_exec / QUANTUM)) / 2;
 
   processo->prioridade = prio;
 }
@@ -273,14 +272,20 @@ static int so_precisa_escalonar(so_t *self)
 
   if (self->processo_corrente->estado_processo == ESTADO_PROC_BLOQUEADO)
   {
+    console_printf("vou escalonar pq bloqueou");
+    console_printf("prio: %lf -> ", self->processo_corrente->prioridade);
     atualiza_prioridade(self, self->processo_corrente);
+    console_printf("%lf", self->processo_corrente->prioridade);
     return 1;
   }
 
   if (self->quantum <= 0)
   {
+    console_printf("vou escalonar pq quantum < 0");
     self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
+    console_printf("prio: %lf -> ", self->processo_corrente->prioridade);
     atualiza_prioridade(self, self->processo_corrente);
+    console_printf("%lf", self->processo_corrente->prioridade);
     return 1;
   }
 
@@ -303,7 +308,7 @@ static void bloqueia_processo(so_t *self, processo_t *processo, bloqueio_id moti
 
 processo_t *pega_maior_prioridade(processo_t *fila_processos)
 {
-  int maior = -1;
+  double maior = -999;
   processo_t *andarilho = fila_processos;
   processo_t *retorno;
   while (andarilho != NULL)
@@ -335,7 +340,7 @@ static void tenta_ler(so_t *self, processo_t *processo, int chamada_sistema)
 
   if (es_le(self->es, teclado_estado, &estado) != ERR_OK)
   {
-    console_printf("SO: problema no acesso ao estado da tela");
+    console_printf("SO: problema no acesso ao estado do teclado");
     self->erro_interno = true;
     return;
   }
@@ -381,8 +386,8 @@ static void tenta_escrever(so_t *self, processo_t *processo, int chamada_sistema
     int dado = processo->reg_X;
     if (es_escreve(self->es, tela, dado) != ERR_OK)
     {
-      console_printf("SO: problema no acesso à tela");
-      self->erro_interno = true;
+      console_printf("SO: problema no acesso a tela");
+      //self->erro_interno = true;
       return;
     }
     desbloqueia_processo(self, processo);
@@ -442,6 +447,22 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
 
 }
 
+static void imprime_fila(so_t *self)
+{
+  /* processo_t *p = self->fila_processos;
+  while(p != NULL)
+  {
+    console_printf("pid: %d estado: %d", p->pid_processo, p->estado_processo);
+    p = p->prox_processo;
+  } */
+
+ for(int i = 0; i < QUANTIDADE_PROCESSOS; i++)
+ {
+  processo_t *p = &self->tabela_processos[i];
+  console_printf("pid %d estado %d", p->pid_processo, p->estado_processo);
+ }
+}
+
 static err_t atualiza_fila(so_t *self)
 {
   self->fila_processos = NULL; // reseta a fila
@@ -454,11 +475,13 @@ static err_t atualiza_fila(so_t *self)
       coloca_processo_fila(self, p);
     }
   }
+
   return ERR_OK;
 }
 
 static void so_escalona(so_t *self)
 {
+  imprime_fila(self);
   // escolhe o próximo processo a executar, que passa a ser o processo
   //   corrente; pode continuar sendo o mesmo de antes ou não
   // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
@@ -487,6 +510,7 @@ static void so_escalona(so_t *self)
   if (self->processo_corrente == NULL)
   {
     self->erro_interno = true;
+    return;
   }
   else
   {
@@ -544,7 +568,7 @@ static int so_despacha(so_t *self)
     }
     else
     {
-      self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
+      //self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
       return 0; // deu tudo certo
     }
   }
@@ -612,7 +636,6 @@ static void so_trata_irq_reset(so_t *self)
         console_printf("Impossivel atribuir terminal ao processo.");
         self->erro_interno = true;
       }
-
       // self->processo_corrente = processo;
       return;
     }
@@ -737,7 +760,7 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga)
 {
   processo->reg_PC = ender_carga;
   processo->reg_A = 0;
-  processo->reg_A = 0;
+  processo->reg_X = 0;
   processo->reg_erro = 0;
   processo->reg_complemento = 0;
   processo->modo = usuario;
