@@ -16,7 +16,7 @@
 
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
-#define INTERVALO_INTERRUPCAO 10 // em instruções executadas
+#define INTERVALO_INTERRUPCAO 30 // em instruções executadas
 
 #define QUANTIDADE_PROCESSOS 4
 #define QUANTUM 15
@@ -184,7 +184,7 @@ static void so_salva_estado_da_cpu(so_t *self)
   // se não houver processo corrente, não faz nada
   bool deu_erro;
 
-  if (self->processo_corrente == NULL)
+  if (self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
   {
     return;
   }
@@ -257,7 +257,7 @@ static void so_trata_pendencias(so_t *self)
 static void atualiza_prioridade(so_t *self, processo_t *processo)
 {
   double t_exec = QUANTUM - self->quantum;
-  double prio = (processo->prioridade - (t_exec / QUANTUM)) / 2;
+  double prio = (processo->prioridade + (t_exec / QUANTUM)) / 2;
 
   processo->prioridade = prio;
 }
@@ -308,15 +308,15 @@ static void bloqueia_processo(so_t *self, processo_t *processo, bloqueio_id moti
 
 processo_t *pega_maior_prioridade(processo_t *fila_processos)
 {
-  double maior = -999;
+  double menor = 999;
   processo_t *andarilho = fila_processos;
-  processo_t *retorno;
+  processo_t *retorno = NULL;
   while (andarilho != NULL)
   {
-    if (andarilho->prioridade > maior)
+    if (andarilho->prioridade < menor)
     {
       retorno = andarilho;
-      maior = andarilho->prioridade;
+      menor = andarilho->prioridade;
     }
     andarilho = andarilho->prox_processo;
   }
@@ -507,16 +507,6 @@ static void so_escalona(so_t *self)
     }
   }
 
-  /* if (self->processo_corrente == NULL)
-  {
-    //self->erro_interno = true;
-    return;
-  } */
-  /* else
-  {
-    self->erro_interno = false;
-  } */
-
   if (self->processo_corrente != ant)
   { // se mudou o processo em execucao, reseta o quantum
     self->quantum = QUANTUM;
@@ -531,8 +521,13 @@ static int so_despacha(so_t *self)
   // o valor retornado será o valor de retorno de CHAMAC
   bool deu_erro;
 
-  if (self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
+  if (self->erro_interno || self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
   {
+    console_printf("deu ruim na 1 verificacao do despacha, erro interno %d", self->erro_interno);
+    if(self->processo_corrente != NULL)
+    {
+      console_printf("proc corrente %d estado %d", self->processo_corrente->pid_processo, self->processo_corrente->estado_processo);
+    }
     return 1;
   }
   else
@@ -569,6 +564,7 @@ static int so_despacha(so_t *self)
     else
     {
       //self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
+      console_printf("proc corrente %d", self->processo_corrente->pid_processo);
       return 0; // deu tudo certo
     }
   }
