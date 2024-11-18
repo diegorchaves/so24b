@@ -16,7 +16,7 @@
 
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
-#define INTERVALO_INTERRUPCAO 30 // em instruções executadas
+#define INTERVALO_INTERRUPCAO 10 // em instruções executadas
 
 #define QUANTIDADE_PROCESSOS 4
 #define QUANTUM 15
@@ -507,15 +507,15 @@ static void so_escalona(so_t *self)
     }
   }
 
-  if (self->processo_corrente == NULL)
+  /* if (self->processo_corrente == NULL)
   {
-    self->erro_interno = true;
+    //self->erro_interno = true;
     return;
-  }
-  else
+  } */
+  /* else
   {
     self->erro_interno = false;
-  }
+  } */
 
   if (self->processo_corrente != ant)
   { // se mudou o processo em execucao, reseta o quantum
@@ -531,7 +531,7 @@ static int so_despacha(so_t *self)
   // o valor retornado será o valor de retorno de CHAMAC
   bool deu_erro;
 
-  if (self->erro_interno)
+  if (self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
   {
     return 1;
   }
