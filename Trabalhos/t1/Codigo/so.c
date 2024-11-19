@@ -18,7 +18,7 @@
 int NUMERO_PROC_CRIADOS = 0;
 int TEMPO_TOTAL_EXEC = 0;
 int TEMPO_OCIOSO = 0;
-int NUMERO_INTERRUPCOES_TIPO[N_IRQ];
+int NUMERO_INTERRUPCOES_TIPO[N_IRQ] = {0, 0, 0, 0, 0, 0};
 
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
@@ -491,7 +491,7 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
   self->fila_processos = processo;
 }
 
-static void imprime_fila(so_t *self)
+static void imprime_tabela_processos(so_t *self)
 {
   /* processo_t *p = self->fila_processos;
   while(p != NULL)
@@ -525,7 +525,7 @@ static err_t atualiza_fila(so_t *self)
 
 static void so_escalona(so_t *self)
 {
-  imprime_fila(self);
+  imprime_tabela_processos(self);
   // escolhe o próximo processo a executar, que passa a ser o processo
   //   corrente; pode continuar sendo o mesmo de antes ou não
   // t1: na primeira versão, escolhe um processo caso o processo corrente não possa continuar
@@ -625,6 +625,7 @@ static void so_trata_irq_desconhecida(so_t *self, int irq);
 
 static void so_trata_irq(so_t *self, int irq)
 {
+  NUMERO_INTERRUPCOES_TIPO[irq] += 1;
   // verifica o tipo de interrupção que está acontecendo, e atende de acordo
   switch (irq)
   {
@@ -706,6 +707,10 @@ static void imprime_metricas(so_t *self)
   console_printf("NUMERO PROC CRIADOS: %d", NUMERO_PROC_CRIADOS);
   console_printf("TEMPO TOTAL EXEC: %d", TEMPO_TOTAL_EXEC);
   console_printf("TEMPO OCIOSO: %d", TEMPO_OCIOSO);
+  for(int i = 0; i < N_IRQ; i++)
+  {
+    console_printf("%s: %d", irq_nome(i), NUMERO_INTERRUPCOES_TIPO[i]);
+  }
 }
 
 static void desarma_relogio(so_t *self)
@@ -728,8 +733,8 @@ static void desarma_relogio(so_t *self)
   }
   else
   {
-    imprime_metricas(self);
     console_printf("SO: sucesso ao desarmar o relogio.");
+    imprime_metricas(self);
   }
 }
 
