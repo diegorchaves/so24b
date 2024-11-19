@@ -54,6 +54,7 @@ static void trata_pendencia_esc(so_t *self, processo_t *processo);
 static void trata_pendencia_le(so_t *self, processo_t *processo);
 static void trata_pendencia_espera(so_t *self, processo_t *processo);
 static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga);
+static void desarma_relogio(so_t *self);
 
 // CRIAÇÃO {{{1
 
@@ -387,7 +388,7 @@ static void tenta_escrever(so_t *self, processo_t *processo, int chamada_sistema
     if (es_escreve(self->es, tela, dado) != ERR_OK)
     {
       console_printf("SO: problema no acesso a tela");
-      //self->erro_interno = true;
+      // self->erro_interno = true;
       return;
     }
     desbloqueia_processo(self, processo);
@@ -438,13 +439,12 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
     andarilho->prox_processo = processo;
   }
   processo->prox_processo = NULL; */
-  if(self->fila_processos == NULL)
+  if (self->fila_processos == NULL)
     processo->prox_processo = NULL;
   else
     processo->prox_processo = self->fila_processos;
-    
-  self->fila_processos = processo;
 
+  self->fila_processos = processo;
 }
 
 static void imprime_fila(so_t *self)
@@ -456,11 +456,11 @@ static void imprime_fila(so_t *self)
     p = p->prox_processo;
   } */
 
- for(int i = 0; i < QUANTIDADE_PROCESSOS; i++)
- {
-  processo_t *p = &self->tabela_processos[i];
-  console_printf("pid %d estado %d", p->pid_processo, p->estado_processo);
- }
+  for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
+  {
+    processo_t *p = &self->tabela_processos[i];
+    console_printf("pid %d estado %d", p->pid_processo, p->estado_processo);
+  }
 }
 
 static err_t atualiza_fila(so_t *self)
@@ -524,7 +524,7 @@ static int so_despacha(so_t *self)
   if (self->erro_interno || self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
   {
     console_printf("deu ruim na 1 verificacao do despacha, erro interno %d", self->erro_interno);
-    if(self->processo_corrente != NULL)
+    if (self->processo_corrente != NULL)
     {
       console_printf("proc corrente %d estado %d", self->processo_corrente->pid_processo, self->processo_corrente->estado_processo);
     }
@@ -563,7 +563,7 @@ static int so_despacha(so_t *self)
     }
     else
     {
-      //self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
+      // self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
       console_printf("proc corrente %d", self->processo_corrente->pid_processo);
       return 0; // deu tudo certo
     }
@@ -656,6 +656,30 @@ static void so_trata_irq_err_cpu(so_t *self)
   self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
 }
 
+static void desarma_relogio(so_t *self)
+{
+  for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
+  {
+    processo_t *p = &self->tabela_processos[i];
+    if (p->estado_processo != ESTADO_PROC_MORTO)
+    {
+      return;
+    }
+  }
+  
+  err_t e1 = es_escreve(self->es, D_RELOGIO_INTERRUPCAO, 0);
+  err_t e2 = es_escreve(self->es, D_RELOGIO_TIMER, 0);
+  if (e1 != ERR_OK || e2 != ERR_OK)
+  {
+    console_printf("SO: erro ao desarmar o relogio.");
+    self->erro_interno = true;
+  }
+  else
+  {
+    console_printf("SO: sucesso ao desarmar o relogio.");
+  }
+}
+
 static void so_trata_irq_relogio(so_t *self)
 {
   // rearma o interruptor do relógio e reinicializa o timer para a próxima interrupção
@@ -667,7 +691,7 @@ static void so_trata_irq_relogio(so_t *self)
     console_printf("SO: problema da reinicialização do timer");
     self->erro_interno = true;
   }
-
+  desarma_relogio(self);
   self->quantum--;
 }
 
