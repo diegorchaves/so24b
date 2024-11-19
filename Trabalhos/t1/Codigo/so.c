@@ -14,6 +14,12 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+// METRICAS E DADOS
+int NUMERO_PROC_CRIADOS = 0;
+int TEMPO_TOTAL_EXEC = 0;
+int TEMPO_OCIOSO = 0;
+int NUMERO_INTERRUPCOES_TIPO[N_IRQ];
+
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
 #define INTERVALO_INTERRUPCAO 30 // em instruções executadas
@@ -38,6 +44,8 @@ struct so_t
 
   processo_t *fila_processos;
   int quantum;
+
+  int cobrador;
 };
 
 // função de tratamento de interrupção (entrada no SO)
@@ -55,6 +63,8 @@ static void trata_pendencia_le(so_t *self, processo_t *processo);
 static void trata_pendencia_espera(so_t *self, processo_t *processo);
 static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga);
 static void desarma_relogio(so_t *self);
+static void so_atualiza_metricas(so_t *self, int delta);
+static void so_sincroniza(so_t *self);
 
 // CRIAÇÃO {{{1
 
@@ -77,6 +87,35 @@ err_t inicializa_tabela_portas(so_t *self)
   return ERR_OK;
 }
 
+static void so_atualiza_metricas(so_t *self, int delta)
+{
+  TEMPO_TOTAL_EXEC += delta;
+  
+  if (self->processo_corrente == NULL) {
+    TEMPO_OCIOSO += delta;
+  }
+}
+
+static void so_sincroniza(so_t *self)
+{
+  int cobrador_anterior = self->cobrador;
+
+  if (es_le(self->es, D_RELOGIO_INSTRUCOES, &self->cobrador) != ERR_OK)
+  {
+    console_printf("SO: problema na leitura do relógio");
+    return;
+  }
+
+  if (cobrador_anterior == -1)
+  {
+    return;
+  }
+
+  int delta = self->cobrador - cobrador_anterior;
+
+  so_atualiza_metricas(self, delta);
+}
+
 so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
 {
   so_t *self = malloc(sizeof(*self));
@@ -88,6 +127,8 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->es = es;
   self->console = console;
   self->erro_interno = false;
+
+  self->cobrador = -1;
 
   if (inicializa_tabela_processos(self) != ERR_OK)
   {
@@ -168,6 +209,9 @@ static int so_trata_interrupcao(void *argC, int reg_A)
   // salva o estado da cpu no descritor do processo que foi interrompido
   so_salva_estado_da_cpu(self);
   // faz o atendimento da interrupção
+
+  so_sincroniza(self);
+
   so_trata_irq(self, irq);
   // faz o processamento independente da interrupção
   so_trata_pendencias(self);
@@ -633,6 +677,7 @@ static void so_trata_irq_reset(so_t *self)
         self->erro_interno = true;
       }
       // self->processo_corrente = processo;
+      NUMERO_PROC_CRIADOS++;
       return;
     }
   }
@@ -656,6 +701,13 @@ static void so_trata_irq_err_cpu(so_t *self)
   self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
 }
 
+static void imprime_metricas(so_t *self)
+{
+  console_printf("NUMERO PROC CRIADOS: %d", NUMERO_PROC_CRIADOS);
+  console_printf("TEMPO TOTAL EXEC: %d", TEMPO_TOTAL_EXEC);
+  console_printf("TEMPO OCIOSO: %d", TEMPO_OCIOSO);
+}
+
 static void desarma_relogio(so_t *self)
 {
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
@@ -666,7 +718,7 @@ static void desarma_relogio(so_t *self)
       return;
     }
   }
-  
+
   err_t e1 = es_escreve(self->es, D_RELOGIO_INTERRUPCAO, 0);
   err_t e2 = es_escreve(self->es, D_RELOGIO_TIMER, 0);
   if (e1 != ERR_OK || e2 != ERR_OK)
@@ -676,6 +728,7 @@ static void desarma_relogio(so_t *self)
   }
   else
   {
+    imprime_metricas(self);
     console_printf("SO: sucesso ao desarmar o relogio.");
   }
 }
@@ -826,6 +879,7 @@ static void so_chamada_cria_proc(so_t *self)
 
           console_printf("Criando novo processo...com PID %d", processo->pid_processo);
           self->processo_corrente->reg_A = processo->pid_processo;
+          NUMERO_PROC_CRIADOS++;
           return;
         }
       }
