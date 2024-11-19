@@ -65,6 +65,8 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga);
 static void desarma_relogio(so_t *self);
 static void so_atualiza_metricas(so_t *self, int delta);
 static void so_sincroniza(so_t *self);
+static void muda_estado_proc(processo_t *processo, int novo_estado);
+char *nome_estado(int estado);
 
 // CRIAÇÃO {{{1
 
@@ -72,7 +74,8 @@ err_t inicializa_tabela_processos(so_t *self)
 {
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
   {
-    self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
+    //self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
+    muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
     self->tabela_processos[i].porta_processo = NULL;
   }
   return ERR_OK;
@@ -93,6 +96,23 @@ static void so_atualiza_metricas(so_t *self, int delta)
   
   if (self->processo_corrente == NULL) {
     TEMPO_OCIOSO += delta;
+  }
+}
+
+char *nome_estado(int estado)
+{
+  switch(estado)
+  {
+    case ESTADO_PROC_BLOQUEADO:
+      return "bloqueado";
+    case ESTADO_PROC_EXECUTANDO:
+      return "executando";
+    case ESTADO_PROC_MORTO:
+      return "morto";
+    case ESTADO_PROC_PRONTO:
+      return "pronto";
+    default:
+      return "desconhecido";
   }
 }
 
@@ -229,7 +249,7 @@ static void so_salva_estado_da_cpu(so_t *self)
   // se não houver processo corrente, não faz nada
   bool deu_erro;
 
-  if (self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
+  if (self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_EXECUTANDO)
   {
     return;
   }
@@ -327,7 +347,8 @@ static int so_precisa_escalonar(so_t *self)
   if (self->quantum <= 0)
   {
     console_printf("vou escalonar pq quantum < 0");
-    self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
+    //self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
+    muda_estado_proc(self->processo_corrente, ESTADO_PROC_PRONTO);
     console_printf("prio: %lf -> ", self->processo_corrente->prioridade);
     atualiza_prioridade(self, self->processo_corrente);
     console_printf("%lf", self->processo_corrente->prioridade);
@@ -341,7 +362,8 @@ static void bloqueia_processo(so_t *self, processo_t *processo, bloqueio_id moti
 {
   if (processo->estado_processo != ESTADO_PROC_BLOQUEADO && processo->estado_processo != ESTADO_PROC_MORTO)
   {
-    processo->estado_processo = ESTADO_PROC_BLOQUEADO;
+    //processo->estado_processo = ESTADO_PROC_BLOQUEADO;
+    muda_estado_proc(processo, ESTADO_PROC_BLOQUEADO);
     processo->bloqueio_motivo = motivo;
 
     if (motivo == BLOQUEIO_ESPERA)
@@ -372,7 +394,8 @@ static void desbloqueia_processo(so_t *self, processo_t *processo)
 {
   if (processo->estado_processo == ESTADO_PROC_BLOQUEADO)
   {
-    processo->estado_processo = ESTADO_PROC_PRONTO;
+    //processo->estado_processo = ESTADO_PROC_PRONTO;
+    muda_estado_proc(processo, ESTADO_PROC_PRONTO);
   }
 }
 
@@ -503,7 +526,7 @@ static void imprime_tabela_processos(so_t *self)
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
   {
     processo_t *p = &self->tabela_processos[i];
-    console_printf("pid %d estado %d", p->pid_processo, p->estado_processo);
+    console_printf("pid %d estado %s", p->pid_processo, nome_estado(p->estado_processo));
   }
 }
 
@@ -565,7 +588,7 @@ static int so_despacha(so_t *self)
   // o valor retornado será o valor de retorno de CHAMAC
   bool deu_erro;
 
-  if (self->erro_interno || self->processo_corrente == NULL || self->processo_corrente->estado_processo != ESTADO_PROC_PRONTO)
+  if (self->erro_interno || self->processo_corrente == NULL)
   {
     console_printf("deu ruim na 1 verificacao do despacha, erro interno %d", self->erro_interno);
     if (self->processo_corrente != NULL)
@@ -609,6 +632,7 @@ static int so_despacha(so_t *self)
     {
       // self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
       console_printf("proc corrente %d", self->processo_corrente->pid_processo);
+      muda_estado_proc(self->processo_corrente, ESTADO_PROC_EXECUTANDO);
       return 0; // deu tudo certo
     }
   }
@@ -699,7 +723,8 @@ static void so_trata_irq_err_cpu(so_t *self)
   console_printf("SO: IRQ não tratada -- erro na CPU: %s", err_nome(err));
   // self->erro_interno = true;
   console_printf("Matando o processo...PID %d", self->processo_corrente->pid_processo);
-  self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
+  //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
+  muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
 }
 
 static void imprime_metricas(so_t *self)
@@ -711,6 +736,11 @@ static void imprime_metricas(so_t *self)
   {
     console_printf("%s: %d", irq_nome(i), NUMERO_INTERRUPCOES_TIPO[i]);
   }
+}
+
+static void muda_estado_proc(processo_t *processo, int novo_estado)
+{
+  processo->estado_processo = novo_estado;
 }
 
 static void desarma_relogio(so_t *self)
@@ -796,7 +826,8 @@ static void so_trata_irq_chamada_sistema(so_t *self)
   default:
     console_printf("SO: chamada de sistema desconhecida (%d)", id_chamada);
     // t1: deveria matar o processo
-    self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
+    //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
+    muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
   }
 }
 
@@ -843,7 +874,8 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga)
   processo->reg_complemento = 0;
   processo->modo = usuario;
   processo->pid_processo = PID_GLOBAL++;
-  processo->estado_processo = ESTADO_PROC_PRONTO;
+  //processo->estado_processo = ESTADO_PROC_PRONTO;
+  muda_estado_proc(processo, ESTADO_PROC_PRONTO);
   processo->porta_processo = atribuir_porta(self);
   processo->bloqueio_motivo = 0;
 
@@ -908,7 +940,8 @@ static void so_chamada_mata_proc(so_t *self)
     {
       if (self->tabela_processos[i].pid_processo == self->processo_corrente->reg_X)
       {
-        self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
+        //self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
+        muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
         self->tabela_processos[i].porta_processo->porta_ocupada = false;
         return;
       }
@@ -918,7 +951,8 @@ static void so_chamada_mata_proc(so_t *self)
   else if (self->processo_corrente->reg_X == 0)
   {
     console_printf("Matando o proprio processo de PID %d.", self->processo_corrente->pid_processo);
-    self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
+    //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
+    muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
     self->processo_corrente->porta_processo->porta_ocupada = false;
   }
 }

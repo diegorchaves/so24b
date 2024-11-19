@@ -23,7 +23,6 @@ struct processo_t
   int bloqueio_motivo;
   int pid_esperado;
   porta_t *porta_processo;
-
   processo_t *prox_processo;
 
   double prioridade;
@@ -34,10 +33,12 @@ typedef enum
     ESTADO_PROC_MORTO       = 1,
     ESTADO_PROC_PRONTO      = 2,
     ESTADO_PROC_BLOQUEADO   = 3,
-    ESTADO_PROC_EXECUTANDO  = 4
+    ESTADO_PROC_EXECUTANDO  = 4,
+    QUANTIDADE_ESTADOS_PROC
 } estado_processo_id;
 
-typedef enum {
+typedef enum 
+{
   BLOQUEIO_ESC        = 1,
   BLOQUEIO_LE         = 2,
   BLOQUEIO_ESPERA     = 3
