@@ -12,12 +12,14 @@
 #include "processo.h"
 
 #include <stdlib.h>
+#include <stdio.h>
 #include <stdbool.h>
 
 // METRICAS E DADOS
 int QUANTIDADE_PROC_CRIADOS = 0;
 int TEMPO_TOTAL_EXEC = 0;
 int TEMPO_OCIOSO = 0;
+int PREEMPCOES = 0;
 int NUMERO_INTERRUPCOES_TIPO[N_IRQ] = {0, 0, 0, 0, 0, 0};
 
 // CONSTANTES E TIPOS {{{1
@@ -359,7 +361,8 @@ static int so_precisa_escalonar(so_t *self)
 
   if (self->quantum <= 0)
   {
-    self->processo_corrente->metricas->n_preempcoes++;
+    PREEMPCOES++;
+    self->processo_corrente->metricas->n_preempcoes += 1;
     console_printf("vou escalonar pq quantum < 0");
     //self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
     muda_estado_proc(self->processo_corrente, ESTADO_PROC_PRONTO);
@@ -741,7 +744,7 @@ static void so_trata_irq_err_cpu(so_t *self)
   muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
 }
 
-static void imprime_metricas(so_t *self)
+/* static void imprime_metricas(so_t *self)
 {
   console_printf("QUANTIDADE PROC CRIADOS: %d", QUANTIDADE_PROC_CRIADOS);
   console_printf("TEMPO TOTAL EXEC: %d", TEMPO_TOTAL_EXEC);
@@ -755,9 +758,51 @@ static void imprime_metricas(so_t *self)
   {
     processo_t *p = &self->tabela_processos[i];
     proc_metricas *met = p->metricas;
-    console_printf("PID: %d Morto (n/t) %d / %d Pronto (n/t) %d / %d Preempcoes %d", p->pid_processo, met->estado_n_vezes[ESTADO_PROC_MORTO], met->estado_t_total[ESTADO_PROC_MORTO], met->estado_n_vezes[ESTADO_PROC_PRONTO], met->estado_t_total[ESTADO_PROC_PRONTO], met->n_preempcoes);
-    console_printf("%s: %d", nome_estado(ESTADO_PROC_MORTO), met->estado_n_vezes[ESTADO_PROC_MORTO]);
+    console_printf("PID: %d", p->pid_processo);
+
+    for(int j = 1; j < QUANTIDADE_ESTADOS_PROC; j++)
+    {
+      console_printf("Estado %s: %d vezes", nome_estado(j), met->estado_n_vezes[j]);
+      console_printf("Estado %s: %d inst", nome_estado(j), met->estado_t_total[j]);
+    }
   }
+} */
+
+static void imprime_metricas(so_t *self)
+{
+    // Abrir o arquivo para escrita (ou criar se não existir)
+    FILE *arquivo = fopen("metricas.txt", "w");
+    if (arquivo == NULL) {
+        console_printf("Erro ao abrir o arquivo para escrita.\n");
+        return;
+    }
+
+    // Escrever no arquivo em vez de usar console_printf
+    fprintf(arquivo, "QUANTIDADE PROC CRIADOS: %d\n", QUANTIDADE_PROC_CRIADOS);
+    fprintf(arquivo, "TEMPO TOTAL EXEC: %d\n", TEMPO_TOTAL_EXEC);
+    fprintf(arquivo, "TEMPO OCIOSO: %d\n", TEMPO_OCIOSO);
+    fprintf(arquivo, "PREEMPCOES: %d\n", PREEMPCOES);
+
+    
+    for (int i = 0; i < N_IRQ; i++) {
+        fprintf(arquivo, "%s: %d\n", irq_nome(i), NUMERO_INTERRUPCOES_TIPO[i]);
+    }
+
+    for (int i = 0; i < QUANTIDADE_PROC_CRIADOS; i++) {
+        processo_t *p = &self->tabela_processos[i];
+        proc_metricas *met = p->metricas;
+        fprintf(arquivo, "PID: %d\n", p->pid_processo);
+
+        for (int j = 1; j < QUANTIDADE_ESTADOS_PROC; j++) {
+            fprintf(arquivo, "Estado %s: %d vezes\n", nome_estado(j), met->estado_n_vezes[j]);
+            fprintf(arquivo, "Estado %s: %d inst\n", nome_estado(j), met->estado_t_total[j]);
+            fprintf(arquivo, "Preempcoes: %d vezes\n", met->n_preempcoes);
+
+        }
+    }
+
+    // Fechar o arquivo após escrever
+    fclose(arquivo);
 }
 
 static void muda_estado_proc(processo_t *processo, int novo_estado)
