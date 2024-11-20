@@ -67,7 +67,7 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga);
 static void desarma_relogio(so_t *self);
 static void so_atualiza_metricas(so_t *self, int delta);
 static void so_sincroniza(so_t *self);
-static void muda_estado_proc(processo_t *processo, int novo_estado);
+static void muda_estado_proc(so_t *self, processo_t *processo, int novo_estado);
 char *nome_estado(int estado);
 
 // CRIAÇÃO {{{1
@@ -364,7 +364,7 @@ static int so_precisa_escalonar(so_t *self)
     self->processo_corrente->metricas->n_preempcoes += 1;
     console_printf("vou escalonar pq quantum < 0");
     //self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
-    muda_estado_proc(self->processo_corrente, ESTADO_PROC_PRONTO);
+    muda_estado_proc(self, self->processo_corrente, ESTADO_PROC_PRONTO);
     console_printf("prio: %lf -> ", self->processo_corrente->prioridade);
     atualiza_prioridade(self, self->processo_corrente);
     console_printf("%lf", self->processo_corrente->prioridade);
@@ -379,7 +379,7 @@ static void bloqueia_processo(so_t *self, processo_t *processo, bloqueio_id moti
   if (processo->estado_processo != ESTADO_PROC_BLOQUEADO && processo->estado_processo != ESTADO_PROC_MORTO)
   {
     //processo->estado_processo = ESTADO_PROC_BLOQUEADO;
-    muda_estado_proc(processo, ESTADO_PROC_BLOQUEADO);
+    muda_estado_proc(self, processo, ESTADO_PROC_BLOQUEADO);
     processo->bloqueio_motivo = motivo;
 
     if (motivo == BLOQUEIO_ESPERA)
@@ -411,7 +411,7 @@ static void desbloqueia_processo(so_t *self, processo_t *processo)
   if (processo->estado_processo == ESTADO_PROC_BLOQUEADO)
   {
     //processo->estado_processo = ESTADO_PROC_PRONTO;
-    muda_estado_proc(processo, ESTADO_PROC_PRONTO);
+    muda_estado_proc(self, processo, ESTADO_PROC_PRONTO);
   }
 }
 
@@ -510,7 +510,7 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
 {
   // insere no final da fila (circular)
 
-  /* if (self->fila_processos == NULL)
+  if (self->fila_processos == NULL)
   {
     self->fila_processos = processo;
   }
@@ -523,15 +523,15 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
     }
     andarilho->prox_processo = processo;
   }
-  processo->prox_processo = NULL; */
+  processo->prox_processo = NULL;
 
   // insere no inicio da fila (simples ou prioritario)
-  if (self->fila_processos == NULL)
+  /* if (self->fila_processos == NULL)
     processo->prox_processo = NULL;
   else
     processo->prox_processo = self->fila_processos;
 
-  self->fila_processos = processo;
+  self->fila_processos = processo; */
 }
 
 static void imprime_tabela_processos(so_t *self)
@@ -543,7 +543,7 @@ static void imprime_tabela_processos(so_t *self)
   }
 }
 
-static err_t atualiza_fila(so_t *self)
+/* static err_t atualiza_fila(so_t *self)
 {
   self->fila_processos = NULL; // reseta a fila
 
@@ -557,7 +557,7 @@ static err_t atualiza_fila(so_t *self)
   }
 
   return ERR_OK;
-}
+} */
 
 static void so_escalona(so_t *self)
 {
@@ -576,16 +576,16 @@ static void so_escalona(so_t *self)
   {
     ant = self->processo_corrente;
 
-    if (atualiza_fila(self) != ERR_OK)
+    /* if (atualiza_fila(self) != ERR_OK)
     {
       self->erro_interno = true;
       return;
     }
     else
-    {
+    { */
       //self->processo_corrente = pega_maior_prioridade(self->fila_processos);    // escalonador prioritario
-      self->processo_corrente = self->fila_processos;   // pega o primeiro da fila (escalonador circular / simples)
-    }
+    self->processo_corrente = self->fila_processos;   // pega o primeiro da fila (escalonador circular / simples)
+    /* } */
   }
 
   if (self->processo_corrente != ant)
@@ -645,7 +645,7 @@ static int so_despacha(so_t *self)
     else
     {
       console_printf("proc corrente %d", self->processo_corrente->pid_processo);
-      muda_estado_proc(self->processo_corrente, ESTADO_PROC_EXECUTANDO);
+      muda_estado_proc(self, self->processo_corrente, ESTADO_PROC_EXECUTANDO);
       return 0; // deu tudo certo
     }
   }
@@ -737,7 +737,7 @@ static void so_trata_irq_err_cpu(so_t *self)
   // self->erro_interno = true;
   console_printf("Matando o processo...PID %d", self->processo_corrente->pid_processo);
   //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
-  muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
+  muda_estado_proc(self, self->processo_corrente, ESTADO_PROC_MORTO);
 }
 
 /* static void imprime_metricas(so_t *self)
@@ -766,7 +766,7 @@ static void so_trata_irq_err_cpu(so_t *self)
 
 static void imprime_metricas(so_t *self)
 {
-    FILE *arquivo = fopen("metricas.txt", "w");
+    FILE *arquivo = fopen("metricas-circular-int20.txt", "w");
     if (arquivo == NULL) {
         console_printf("Erro ao abrir o arquivo para escrita.\n");
         return;
@@ -804,10 +804,48 @@ static void imprime_metricas(so_t *self)
     fclose(arquivo);
 }
 
-static void muda_estado_proc(processo_t *processo, int novo_estado)
+static void tira_processo_fila(so_t *self, int pid_para_tirar)
+{
+    if(self->fila_processos == NULL) {
+        console_printf("Fila vazia\n");
+    } else {
+        processo_t *anterior = NULL;
+        processo_t *andarilho = self->fila_processos;
+
+        // Percorre até encontrar o processo com o pid solicitado
+        while(andarilho != NULL && andarilho->pid_processo != pid_para_tirar) {
+            anterior = andarilho;
+            andarilho = andarilho->prox_processo;
+        }
+
+        if(andarilho == NULL) {
+            console_printf("Nao achei o processo para tirar da fila.\n");
+        } else {
+            // Remoção do primeiro processo
+            if(anterior == NULL) {
+                self->fila_processos = andarilho->prox_processo;
+            } else {
+                anterior->prox_processo = andarilho->prox_processo;
+            }
+            // Libera a memória, se necessário (apenas se o processo for dinamicamente alocado)
+            // free(andarilho); // Descomente se for aplicável
+        }
+    }
+}
+
+static void muda_estado_proc(so_t *self, processo_t *processo, int novo_estado)
 {
   processo->estado_processo = novo_estado;
   processo->metricas->estado_n_vezes[novo_estado] += 1;
+
+  if(novo_estado == ESTADO_PROC_PRONTO)
+  {
+    coloca_processo_fila(self, processo);
+  }
+  else
+  {
+    tira_processo_fila(self, processo->pid_processo);
+  }
 }
 
 static void desarma_relogio(so_t *self)
@@ -894,7 +932,7 @@ static void so_trata_irq_chamada_sistema(so_t *self)
     console_printf("SO: chamada de sistema desconhecida (%d)", id_chamada);
     // t1: deveria matar o processo
     //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
-    muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
+    muda_estado_proc(self, self->processo_corrente, ESTADO_PROC_MORTO);
   }
 }
 
@@ -956,7 +994,7 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga)
     processo->metricas->n_preempcoes = 0;
   }
 
-  muda_estado_proc(processo, ESTADO_PROC_PRONTO);
+  muda_estado_proc(self, processo, ESTADO_PROC_PRONTO);
 }
 
 // implementação da chamada se sistema SO_CRIA_PROC
@@ -1018,7 +1056,7 @@ static void so_chamada_mata_proc(so_t *self)
       if (self->tabela_processos[i].pid_processo == self->processo_corrente->reg_X)
       {
         //self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
-        muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
+        muda_estado_proc(self, &self->tabela_processos[i], ESTADO_PROC_MORTO);
         self->tabela_processos[i].porta_processo->porta_ocupada = false;
         return;
       }
@@ -1029,7 +1067,7 @@ static void so_chamada_mata_proc(so_t *self)
   {
     console_printf("Matando o proprio processo de PID %d.", self->processo_corrente->pid_processo);
     //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
-    muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
+    muda_estado_proc(self, self->processo_corrente, ESTADO_PROC_MORTO);
     self->processo_corrente->porta_processo->porta_ocupada = false;
   }
 }
