@@ -770,14 +770,12 @@ static void so_trata_irq_err_cpu(so_t *self)
 
 static void imprime_metricas(so_t *self)
 {
-    // Abrir o arquivo para escrita (ou criar se não existir)
     FILE *arquivo = fopen("metricas.txt", "w");
     if (arquivo == NULL) {
         console_printf("Erro ao abrir o arquivo para escrita.\n");
         return;
     }
 
-    // Escrever no arquivo em vez de usar console_printf
     fprintf(arquivo, "QUANTIDADE PROC CRIADOS: %d\n", QUANTIDADE_PROC_CRIADOS);
     fprintf(arquivo, "TEMPO TOTAL EXEC: %d\n", TEMPO_TOTAL_EXEC);
     fprintf(arquivo, "TEMPO OCIOSO: %d\n", TEMPO_OCIOSO);
@@ -789,19 +787,24 @@ static void imprime_metricas(so_t *self)
     }
 
     for (int i = 0; i < QUANTIDADE_PROC_CRIADOS; i++) {
+      int soma_estados = 0;
         processo_t *p = &self->tabela_processos[i];
         proc_metricas *met = p->metricas;
+        fprintf(arquivo, "--------------------------------------------\n");
         fprintf(arquivo, "PID: %d\n", p->pid_processo);
 
         for (int j = 1; j < QUANTIDADE_ESTADOS_PROC; j++) {
-            fprintf(arquivo, "Estado %s: %d vezes\n", nome_estado(j), met->estado_n_vezes[j]);
-            fprintf(arquivo, "Estado %s: %d inst\n", nome_estado(j), met->estado_t_total[j]);
+          if(j >= 2)
+            soma_estados += met->estado_n_vezes[j];
+          fprintf(arquivo, "Estado %s: %d vezes\n", nome_estado(j), met->estado_n_vezes[j]);
+          fprintf(arquivo, "Estado %s: %d inst\n", nome_estado(j), met->estado_t_total[j]);
         }
       fprintf(arquivo, "Preempcoes: %d vezes\n", met->n_preempcoes);
-
+      fprintf(arquivo, "Tempo medio resposta: %f\n", (double)met->estado_t_total[ESTADO_PROC_PRONTO]/met->estado_n_vezes[ESTADO_PROC_PRONTO]);
+      fprintf(arquivo, "Tempo retorno: %d inst\n", soma_estados);
+      
     }
 
-    // Fechar o arquivo após escrever
     fclose(arquivo);
 }
 
