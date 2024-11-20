@@ -38,7 +38,6 @@ struct so_t
   es_t *es;
   console_t *console;
   bool erro_interno;
-  // t1: tabela de processos, processo corrente, pendências, etc
   processo_t tabela_processos[QUANTIDADE_PROCESSOS];
   processo_t *processo_corrente;
 
@@ -47,7 +46,7 @@ struct so_t
   processo_t *fila_processos;
   int quantum;
 
-  int cobrador;
+  int relogio_so;
 };
 
 // função de tratamento de interrupção (entrada no SO)
@@ -77,8 +76,6 @@ err_t inicializa_tabela_processos(so_t *self)
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
   {
     self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
-    //muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
-
     self->tabela_processos[i].porta_processo = NULL;
   }
   return ERR_OK;
@@ -133,20 +130,20 @@ char *nome_estado(int estado)
 
 static void so_sincroniza(so_t *self)
 {
-  int cobrador_anterior = self->cobrador;
+  int relogio_so_anterior = self->relogio_so;
 
-  if (es_le(self->es, D_RELOGIO_INSTRUCOES, &self->cobrador) != ERR_OK)
+  if (es_le(self->es, D_RELOGIO_INSTRUCOES, &self->relogio_so) != ERR_OK)
   {
     console_printf("SO: problema na leitura do relógio");
     return;
   }
 
-  if (cobrador_anterior == -1)
+  if (relogio_so_anterior == -1)
   {
     return;
   }
 
-  int delta = self->cobrador - cobrador_anterior;
+  int delta = self->relogio_so - relogio_so_anterior;
 
   so_atualiza_metricas(self, delta);
 }
@@ -163,7 +160,7 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->console = console;
   self->erro_interno = false;
 
-  self->cobrador = -1;
+  self->relogio_so = -1;
 
   if (inicializa_tabela_processos(self) != ERR_OK)
   {
@@ -243,10 +240,9 @@ static int so_trata_interrupcao(void *argC, int reg_A)
   // console_printf("SO: recebi IRQ %d (%s)", irq, irq_nome(irq));
   // salva o estado da cpu no descritor do processo que foi interrompido
   so_salva_estado_da_cpu(self);
-  // faz o atendimento da interrupção
-
+  // sincroniza o relogio do so
   so_sincroniza(self);
-
+  // faz o atendimento da interrupção
   so_trata_irq(self, irq);
   // faz o processamento independente da interrupção
   so_trata_pendencias(self);
@@ -738,35 +734,10 @@ static void so_trata_irq_err_cpu(so_t *self)
   // mem_le(self->mem, IRQ_END_erro, &err_int);
   err_t err = err_int;
   console_printf("SO: IRQ não tratada -- erro na CPU: %s", err_nome(err));
-  // self->erro_interno = true;
+  
   console_printf("Matando o processo...PID %d", self->processo_corrente->pid_processo);
-  //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
   muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
 }
-
-/* static void imprime_metricas(so_t *self)
-{
-  console_printf("QUANTIDADE PROC CRIADOS: %d", QUANTIDADE_PROC_CRIADOS);
-  console_printf("TEMPO TOTAL EXEC: %d", TEMPO_TOTAL_EXEC);
-  console_printf("TEMPO OCIOSO: %d", TEMPO_OCIOSO);
-  for(int i = 0; i < N_IRQ; i++)
-  {
-    console_printf("%s: %d", irq_nome(i), NUMERO_INTERRUPCOES_TIPO[i]);
-  }
-
-  for(int i = 0; i < QUANTIDADE_PROC_CRIADOS; i++)
-  {
-    processo_t *p = &self->tabela_processos[i];
-    proc_metricas *met = p->metricas;
-    console_printf("PID: %d", p->pid_processo);
-
-    for(int j = 1; j < QUANTIDADE_ESTADOS_PROC; j++)
-    {
-      console_printf("Estado %s: %d vezes", nome_estado(j), met->estado_n_vezes[j]);
-      console_printf("Estado %s: %d inst", nome_estado(j), met->estado_t_total[j]);
-    }
-  }
-} */
 
 static void imprime_metricas(so_t *self)
 {
@@ -896,8 +867,6 @@ static void so_trata_irq_chamada_sistema(so_t *self)
     break;
   default:
     console_printf("SO: chamada de sistema desconhecida (%d)", id_chamada);
-    // t1: deveria matar o processo
-    //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
     muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
   }
 }
@@ -945,7 +914,6 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga)
   processo->reg_complemento = 0;
   processo->modo = usuario;
   processo->pid_processo = PID_GLOBAL++;
-  //processo->estado_processo = ESTADO_PROC_PRONTO;
   processo->porta_processo = atribuir_porta(self);
   processo->bloqueio_motivo = 0;
 
@@ -1032,7 +1000,6 @@ static void so_chamada_mata_proc(so_t *self)
   else if (self->processo_corrente->reg_X == 0)
   {
     console_printf("Matando o proprio processo de PID %d.", self->processo_corrente->pid_processo);
-    //self->processo_corrente->estado_processo = ESTADO_PROC_MORTO;
     muda_estado_proc(self->processo_corrente, ESTADO_PROC_MORTO);
     self->processo_corrente->porta_processo->porta_ocupada = false;
   }
