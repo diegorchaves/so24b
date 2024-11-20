@@ -15,7 +15,7 @@
 #include <stdbool.h>
 
 // METRICAS E DADOS
-int NUMERO_PROC_CRIADOS = 0;
+int QUANTIDADE_PROC_CRIADOS = 0;
 int TEMPO_TOTAL_EXEC = 0;
 int TEMPO_OCIOSO = 0;
 int NUMERO_INTERRUPCOES_TIPO[N_IRQ] = {0, 0, 0, 0, 0, 0};
@@ -74,8 +74,9 @@ err_t inicializa_tabela_processos(so_t *self)
 {
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
   {
-    //self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
-    muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
+    self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
+    //muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
+
     self->tabela_processos[i].porta_processo = NULL;
   }
   return ERR_OK;
@@ -90,6 +91,16 @@ err_t inicializa_tabela_portas(so_t *self)
   return ERR_OK;
 }
 
+static void so_atualiza_metricas_proc(so_t *self, int delta)
+{
+  for(int i = 0; i < QUANTIDADE_PROC_CRIADOS; i++)
+  {
+    processo_t *p = &self->tabela_processos[i];
+
+    p->metricas->estado_t_total[p->estado_processo] += delta;
+  }
+}
+
 static void so_atualiza_metricas(so_t *self, int delta)
 {
   TEMPO_TOTAL_EXEC += delta;
@@ -97,6 +108,8 @@ static void so_atualiza_metricas(so_t *self, int delta)
   if (self->processo_corrente == NULL) {
     TEMPO_OCIOSO += delta;
   }
+
+  so_atualiza_metricas_proc(self, delta);
 }
 
 char *nome_estado(int estado)
@@ -346,6 +359,7 @@ static int so_precisa_escalonar(so_t *self)
 
   if (self->quantum <= 0)
   {
+    self->processo_corrente->metricas->n_preempcoes++;
     console_printf("vou escalonar pq quantum < 0");
     //self->processo_corrente->estado_processo = ESTADO_PROC_PRONTO;
     muda_estado_proc(self->processo_corrente, ESTADO_PROC_PRONTO);
@@ -702,7 +716,7 @@ static void so_trata_irq_reset(so_t *self)
         self->erro_interno = true;
       }
       // self->processo_corrente = processo;
-      NUMERO_PROC_CRIADOS++;
+      QUANTIDADE_PROC_CRIADOS++;
       return;
     }
   }
@@ -729,18 +743,27 @@ static void so_trata_irq_err_cpu(so_t *self)
 
 static void imprime_metricas(so_t *self)
 {
-  console_printf("NUMERO PROC CRIADOS: %d", NUMERO_PROC_CRIADOS);
+  console_printf("QUANTIDADE PROC CRIADOS: %d", QUANTIDADE_PROC_CRIADOS);
   console_printf("TEMPO TOTAL EXEC: %d", TEMPO_TOTAL_EXEC);
   console_printf("TEMPO OCIOSO: %d", TEMPO_OCIOSO);
   for(int i = 0; i < N_IRQ; i++)
   {
     console_printf("%s: %d", irq_nome(i), NUMERO_INTERRUPCOES_TIPO[i]);
   }
+
+  for(int i = 0; i < QUANTIDADE_PROC_CRIADOS; i++)
+  {
+    processo_t *p = &self->tabela_processos[i];
+    proc_metricas *met = p->metricas;
+    console_printf("PID: %d Morto (n/t) %d / %d Pronto (n/t) %d / %d Preempcoes %d", p->pid_processo, met->estado_n_vezes[ESTADO_PROC_MORTO], met->estado_t_total[ESTADO_PROC_MORTO], met->estado_n_vezes[ESTADO_PROC_PRONTO], met->estado_t_total[ESTADO_PROC_PRONTO], met->n_preempcoes);
+    console_printf("%s: %d", nome_estado(ESTADO_PROC_MORTO), met->estado_n_vezes[ESTADO_PROC_MORTO]);
+  }
 }
 
 static void muda_estado_proc(processo_t *processo, int novo_estado)
 {
   processo->estado_processo = novo_estado;
+  processo->metricas->estado_n_vezes[novo_estado] += 1;
 }
 
 static void desarma_relogio(so_t *self)
@@ -875,11 +898,21 @@ static void inicializa_proc(so_t *self, processo_t *processo, int ender_carga)
   processo->modo = usuario;
   processo->pid_processo = PID_GLOBAL++;
   //processo->estado_processo = ESTADO_PROC_PRONTO;
-  muda_estado_proc(processo, ESTADO_PROC_PRONTO);
   processo->porta_processo = atribuir_porta(self);
   processo->bloqueio_motivo = 0;
 
   processo->prioridade = 0.5;
+
+  processo->metricas = (proc_metricas*)malloc(sizeof(proc_metricas));
+
+  for(int i = 0; i < QUANTIDADE_ESTADOS_PROC; i++)
+  {
+    processo->metricas->estado_n_vezes[i] = 0;
+    processo->metricas->estado_t_total[i] = 0;
+    processo->metricas->n_preempcoes = 0;
+  }
+
+  muda_estado_proc(processo, ESTADO_PROC_PRONTO);
 }
 
 // implementação da chamada se sistema SO_CRIA_PROC
@@ -916,7 +949,7 @@ static void so_chamada_cria_proc(so_t *self)
 
           console_printf("Criando novo processo...com PID %d", processo->pid_processo);
           self->processo_corrente->reg_A = processo->pid_processo;
-          NUMERO_PROC_CRIADOS++;
+          QUANTIDADE_PROC_CRIADOS++;
           return;
         }
       }
