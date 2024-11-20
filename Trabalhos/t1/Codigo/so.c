@@ -20,14 +20,14 @@ int QUANTIDADE_PROC_CRIADOS = 0;
 int TEMPO_TOTAL_EXEC = 0;
 int TEMPO_OCIOSO = 0;
 int PREEMPCOES = 0;
-int NUMERO_INTERRUPCOES_TIPO[N_IRQ] = {0, 0, 0, 0, 0, 0};
+int NUMERO_INTERRUPCOES_TIPO[N_IRQ] = {0};
 
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
-#define INTERVALO_INTERRUPCAO 30 // em instruções executadas
+#define INTERVALO_INTERRUPCAO 20 // em instruções executadas
 
 #define QUANTIDADE_PROCESSOS 4
-#define QUANTUM 15
+#define QUANTUM 5
 
 int PID_GLOBAL = 0;
 
@@ -47,7 +47,7 @@ struct so_t
   processo_t *fila_processos;
   int quantum;
 
-  int cobrador;
+  int so_relogio;
 };
 
 // função de tratamento de interrupção (entrada no SO)
@@ -77,7 +77,6 @@ err_t inicializa_tabela_processos(so_t *self)
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
   {
     self->tabela_processos[i].estado_processo = ESTADO_PROC_MORTO;
-    //muda_estado_proc(&self->tabela_processos[i], ESTADO_PROC_MORTO);
 
     self->tabela_processos[i].porta_processo = NULL;
   }
@@ -133,20 +132,20 @@ char *nome_estado(int estado)
 
 static void so_sincroniza(so_t *self)
 {
-  int cobrador_anterior = self->cobrador;
+  int so_relogio_anterior = self->so_relogio;
 
-  if (es_le(self->es, D_RELOGIO_INSTRUCOES, &self->cobrador) != ERR_OK)
+  if (es_le(self->es, D_RELOGIO_INSTRUCOES, &self->so_relogio) != ERR_OK)
   {
     console_printf("SO: problema na leitura do relógio");
     return;
   }
 
-  if (cobrador_anterior == -1)
+  if (so_relogio_anterior == -1)
   {
     return;
   }
 
-  int delta = self->cobrador - cobrador_anterior;
+  int delta = self->so_relogio - so_relogio_anterior;
 
   so_atualiza_metricas(self, delta);
 }
@@ -163,7 +162,7 @@ so_t *so_cria(cpu_t *cpu, mem_t *mem, es_t *es, console_t *console)
   self->console = console;
   self->erro_interno = false;
 
-  self->cobrador = -1;
+  self->so_relogio = -1;
 
   if (inicializa_tabela_processos(self) != ERR_OK)
   {
@@ -509,6 +508,8 @@ static void trata_pendencia_espera(so_t *self, processo_t *processo)
 
 static void coloca_processo_fila(so_t *self, processo_t *processo)
 {
+  // insere no final da fila (circular)
+
   /* if (self->fila_processos == NULL)
   {
     self->fila_processos = processo;
@@ -523,6 +524,8 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
     andarilho->prox_processo = processo;
   }
   processo->prox_processo = NULL; */
+
+  // insere no inicio da fila (simples ou prioritario)
   if (self->fila_processos == NULL)
     processo->prox_processo = NULL;
   else
@@ -533,13 +536,6 @@ static void coloca_processo_fila(so_t *self, processo_t *processo)
 
 static void imprime_tabela_processos(so_t *self)
 {
-  /* processo_t *p = self->fila_processos;
-  while(p != NULL)
-  {
-    console_printf("pid: %d estado: %d", p->pid_processo, p->estado_processo);
-    p = p->prox_processo;
-  } */
-
   for (int i = 0; i < QUANTIDADE_PROCESSOS; i++)
   {
     processo_t *p = &self->tabela_processos[i];
@@ -587,7 +583,8 @@ static void so_escalona(so_t *self)
     }
     else
     {
-      self->processo_corrente = pega_maior_prioridade(self->fila_processos);
+      //self->processo_corrente = pega_maior_prioridade(self->fila_processos);    // escalonador prioritario
+      self->processo_corrente = self->fila_processos;   // pega o primeiro da fila (escalonador circular / simples)
     }
   }
 
@@ -647,7 +644,6 @@ static int so_despacha(so_t *self)
     }
     else
     {
-      // self->processo_corrente->estado_processo = ESTADO_PROC_EXECUTANDO;
       console_printf("proc corrente %d", self->processo_corrente->pid_processo);
       muda_estado_proc(self->processo_corrente, ESTADO_PROC_EXECUTANDO);
       return 0; // deu tudo certo
