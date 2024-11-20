@@ -796,9 +796,9 @@ static void imprime_metricas(so_t *self)
         for (int j = 1; j < QUANTIDADE_ESTADOS_PROC; j++) {
             fprintf(arquivo, "Estado %s: %d vezes\n", nome_estado(j), met->estado_n_vezes[j]);
             fprintf(arquivo, "Estado %s: %d inst\n", nome_estado(j), met->estado_t_total[j]);
-            fprintf(arquivo, "Preempcoes: %d vezes\n", met->n_preempcoes);
-
         }
+      fprintf(arquivo, "Preempcoes: %d vezes\n", met->n_preempcoes);
+
     }
 
     // Fechar o arquivo após escrever
