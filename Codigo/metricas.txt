@@ -1,0 +1,62 @@
+QUANTIDADE PROC CRIADOS: 4
+TEMPO TOTAL EXEC: 24872
+TEMPO OCIOSO: 4718
+PREEMPCOES: 28
+Reset: 1
+Erro de execucao: 0
+Chamada de sistema: 460
+E/S: relogio: 826
+E/S: teclado: 0
+E/S: console: 0
+--------------------------------------------
+PID: 0
+Estado morto: 1 vezes
+Estado morto: 16 inst
+Estado pronto: 4 vezes
+Estado pronto: 17 inst
+Estado bloqueado: 3 vezes
+Estado bloqueado: 24063 inst
+Estado executando: 72 vezes
+Estado executando: 776 inst
+Preempcoes: 0 vezes
+Tempo medio resposta: 4.250000
+Tempo retorno: 79 inst
+--------------------------------------------
+PID: 1
+Estado morto: 1 vezes
+Estado morto: 7283 inst
+Estado pronto: 29 vezes
+Estado pronto: 7109 inst
+Estado bloqueado: 7 vezes
+Estado bloqueado: 485 inst
+Estado executando: 417 vezes
+Estado executando: 9594 inst
+Preempcoes: 21 vezes
+Tempo medio resposta: 245.137931
+Tempo retorno: 453 inst
+--------------------------------------------
+PID: 2
+Estado morto: 1 vezes
+Estado morto: 11806 inst
+Estado pronto: 20 vezes
+Estado pronto: 7797 inst
+Estado bloqueado: 15 vezes
+Estado bloqueado: 959 inst
+Estado executando: 234 vezes
+Estado executando: 3901 inst
+Preempcoes: 4 vezes
+Tempo medio resposta: 389.850000
+Tempo retorno: 269 inst
+--------------------------------------------
+PID: 3
+Estado morto: 1 vezes
+Estado morto: 350 inst
+Estado pronto: 116 vezes
+Estado pronto: 11570 inst
+Estado bloqueado: 112 vezes
+Estado bloqueado: 6652 inst
+Estado executando: 350 vezes
+Estado executando: 5883 inst
+Preempcoes: 3 vezes
+Tempo medio resposta: 99.741379
+Tempo retorno: 578 inst

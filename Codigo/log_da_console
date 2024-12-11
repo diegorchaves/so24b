@@ -1,0 +1,8629 @@
+SO: carga de 'trata_int.maq' em 10-15
+CMD: 'c'
+SO: carga de 'init.maq' em 100-270
+pid 0 estado pronto
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 15
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 15
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 15
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 14
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 14
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 13
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 13
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 13
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 12
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 12
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 12
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 11
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 11
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 10
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 10
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 10
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 9
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 9
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 9
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 8
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 8
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 8
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 7
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 7
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 6
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 6
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 6
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 5
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 5
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 5
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 4
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 4
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 3
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 3
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 3
+proc corrente 0
+pid 0 estado executando
+pid -1 estado morto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 2
+proc corrente 0
+SO: carga de 'p1.maq' em 7000-7241
+Criando novo processo...com PID 1
+pid 0 estado executando
+pid 1 estado pronto
+pid 0 estado morto
+pid 0 estado morto
+quantum = 2
+proc corrente 0
+SO: carga de 'p2.maq' em 8000-8241
+Criando novo processo...com PID 2
+pid 0 estado executando
+pid 1 estado pronto
+pid 2 estado pronto
+pid 0 estado morto
+quantum = 2
+proc corrente 0
+SO: carga de 'p3.maq' em 9000-9241
+Criando novo processo...com PID 3
+pid 0 estado executando
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 0
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.500000 -> 
+0.683333
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.500000 -> 
+0.750000
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.500000 -> 
+0.750000
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+vou escalonar pq quantum < 0
+prio: 0.500000 -> 
+0.750000
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.750000 -> 
+0.875000
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.750000 -> 
+0.875000
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+vou escalonar pq quantum < 0
+prio: 0.750000 -> 
+0.875000
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.875000 -> 
+0.937500
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.875000 -> 
+0.937500
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 8
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 7
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 6
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 5
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 4
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 3
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 2
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 1
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+vou escalonar pq quantum < 0
+prio: 0.875000 -> 
+0.937500
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 15
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.937500 -> 
+0.968750
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 15
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 4
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 3
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 2
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 1
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.937500 -> 
+0.968750
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 11
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 10
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 9
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.937500 -> 
+0.668750
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.968750 -> 
+0.984375
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.668750 -> 
+0.401042
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.968750 -> 
+0.651042
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.401042 -> 
+0.300521
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.651042 -> 
+0.325521
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+CMD: 'd1'
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.984375 -> 
+0.992188
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.300521 -> 
+0.216927
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.325521 -> 
+0.462760
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.216927 -> 
+0.175130
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.462760 -> 
+0.264714
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.992188 -> 
+0.996094
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.175130 -> 
+0.154232
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.264714 -> 
+0.399023
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.154232 -> 
+0.177116
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.399023 -> 
+0.199512
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.996094 -> 
+0.998047
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.177116 -> 
+0.155225
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.199512 -> 
+0.399756
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 12
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.155225 -> 
+0.177612
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.399756 -> 
+0.233211
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.177612 -> 
+0.088806
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.998047 -> 
+0.999023
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.088806 -> 
+0.111070
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.233211 -> 
+0.449939
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.111070 -> 
+0.088868
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.999023 -> 
+0.999512
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.088868 -> 
+0.111101
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.449939 -> 
+0.258303
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.999512 -> 
+0.999756
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.111101 -> 
+0.122217
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.258303 -> 
+0.429151
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.122217 -> 
+0.094442
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.999756 -> 
+0.999878
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.094442 -> 
+0.113888
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.429151 -> 
+0.247909
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.999878 -> 
+0.799939
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.113888 -> 
+0.123610
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 13
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 12
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 11
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 10
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 9
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 8
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 7
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 6
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 5
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.247909 -> 
+0.457288
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.123610 -> 
+0.095139
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.799939 -> 
+0.433303
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.457288 -> 
+0.261977
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado bloqueado
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.095139 -> 
+0.114236
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.261977 -> 
+0.164322
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.114236 -> 
+0.057118
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado bloqueado
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado pronto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.433303 -> 
+0.716651
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado pronto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.057118 -> 
+0.095226
+quantum = 15
+proc corrente 2
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 2
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado executando
+pid 3 estado pronto
+quantum = 14
+proc corrente 2
+Matando o proprio processo de PID 2.
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.095226 -> 
+0.080946
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.716651 -> 
+0.858326
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.080946 -> 
+0.107140
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.858326 -> 
+0.929163
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.107140 -> 
+0.086903
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.929163 -> 
+0.964581
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.086903 -> 
+0.110118
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.964581 -> 
+0.982291
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.110118 -> 
+0.121726
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.982291 -> 
+0.991145
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.121726 -> 
+0.094196
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.991145 -> 
+0.995573
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.094196 -> 
+0.113765
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.995573 -> 
+0.997786
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.113765 -> 
+0.123549
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 13
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 12
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 11
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 10
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 9
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 8
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 7
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 6
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 5
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 4
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 3
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 2
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 1
+proc corrente 1
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq quantum < 0
+prio: 0.997786 -> 
+0.998893
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.123549 -> 
+0.095108
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.998893 -> 
+0.566113
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.095108 -> 
+0.114221
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado executando
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.566113 -> 
+0.316390
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.114221 -> 
+0.090444
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.316390 -> 
+0.158195
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.090444 -> 
+0.078555
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.158195 -> 
+0.079097
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 13
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.078555 -> 
+0.105944
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 15
+proc corrente 1
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado pronto
+vou escalonar pq bloqueou
+prio: 0.079097 -> 
+0.039549
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.105944 -> 
+0.086305
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado bloqueado
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado pronto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 15
+proc corrente 1
+Matando o proprio processo de PID 1.
+Desbloquando processo porque o esperado de PID 1 morreu.
+pid 0 estado pronto
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado pronto
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.086305 -> 
+0.043153
+quantum = 15
+proc corrente 0
+SO: problema no acesso a tela
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 0
+Desbloquando processo porque o esperado de PID 2 morreu.
+SO: problema no acesso a tela
+pid 0 estado pronto
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+proc corrente 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.683333 -> 
+0.375000
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.043153 -> 
+0.054910
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.054910 -> 
+0.027455
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.027455 -> 
+0.013727
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.013727 -> 
+0.040197
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.040197 -> 
+0.020099
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.020099 -> 
+0.010049
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.010049 -> 
+0.038358
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038358 -> 
+0.019179
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019179 -> 
+0.009589
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009589 -> 
+0.038128
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038128 -> 
+0.019064
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019064 -> 
+0.009532
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009532 -> 
+0.038099
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038099 -> 
+0.019050
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019050 -> 
+0.009525
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009525 -> 
+0.038096
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038096 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+CMD: 'd0'
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado executando
+quantum = 14
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.038095
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.038095 -> 
+0.019048
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.019048 -> 
+0.009524
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+vou escalonar pq bloqueou
+prio: 0.009524 -> 
+0.004762
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: problema no acesso a tela
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado bloqueado
+quantum = 13
+deu ruim na 1 verificacao do despacha, erro interno 0
+pid 0 estado bloqueado
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado pronto
+quantum = 15
+proc corrente 3
+Matando o proprio processo de PID 3.
+Desbloquando processo porque o esperado de PID 3 morreu.
+pid 0 estado pronto
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 15
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 15
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 14
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 14
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 13
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 13
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 13
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 12
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 12
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 12
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 11
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 11
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 11
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 10
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 10
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 9
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 9
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 9
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 8
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 8
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 8
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 7
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 7
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 6
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 6
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 6
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 5
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 5
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 5
+proc corrente 0
+pid 0 estado executando
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 4
+proc corrente 0
+Matando o proprio processo de PID 0.
+pid 0 estado morto
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 15
+deu ruim na 1 verificacao do despacha, erro interno 0
+SO: sucesso ao desarmar o relogio.
+pid 0 estado morto
+pid 1 estado morto
+pid 2 estado morto
+pid 3 estado morto
+quantum = 14
+deu ruim na 1 verificacao do despacha, erro interno 0
+CMD: 'f'
+Fim da execução.
+relógio: 2553066
