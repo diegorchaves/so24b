@@ -17,9 +17,9 @@
 
 // CONSTANTES E TIPOS {{{1
 // intervalo entre interrupções do relógio
-#define INTERVALO_INTERRUPCAO 30 // em instruções executadas
+#define INTERVALO_INTERRUPCAO 20 // em instruções executadas
 #define QUANTIDADE_PROCESSOS 4
-#define QUANTUM 15
+#define QUANTUM 5
 
 typedef enum
 {
@@ -28,7 +28,7 @@ typedef enum
   ESCALONADOR_PRIORITARIO = 2
 } VERSAO_ESCALONADOR;
 
-int escalonador = ESCALONADOR_PRIORITARIO;
+int escalonador = ESCALONADOR_SIMPLES;
 
 int PID_GLOBAL = 0;
 

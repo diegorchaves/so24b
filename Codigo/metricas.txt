@@ -1,62 +1,62 @@
 QUANTIDADE PROC CRIADOS: 4
-TEMPO TOTAL EXEC: 24872
-TEMPO OCIOSO: 4718
-PREEMPCOES: 28
+TEMPO TOTAL EXEC: 27053
+TEMPO OCIOSO: 5930
+PREEMPCOES: 0
 Reset: 1
 Erro de execucao: 0
 Chamada de sistema: 460
-E/S: relogio: 826
+E/S: relogio: 1338
 E/S: teclado: 0
 E/S: console: 0
 --------------------------------------------
 PID: 0
 Estado morto: 1 vezes
-Estado morto: 16 inst
+Estado morto: 15 inst
 Estado pronto: 4 vezes
-Estado pronto: 17 inst
+Estado pronto: 43 inst
 Estado bloqueado: 3 vezes
-Estado bloqueado: 24063 inst
-Estado executando: 72 vezes
-Estado executando: 776 inst
+Estado bloqueado: 26174 inst
+Estado executando: 87 vezes
+Estado executando: 821 inst
 Preempcoes: 0 vezes
-Tempo medio resposta: 4.250000
-Tempo retorno: 79 inst
+Tempo medio resposta: 10.750000
+Tempo retorno: 94 inst
 --------------------------------------------
 PID: 1
 Estado morto: 1 vezes
-Estado morto: 7283 inst
-Estado pronto: 29 vezes
-Estado pronto: 7109 inst
-Estado bloqueado: 7 vezes
-Estado bloqueado: 485 inst
-Estado executando: 417 vezes
-Estado executando: 9594 inst
-Preempcoes: 21 vezes
-Tempo medio resposta: 245.137931
-Tempo retorno: 453 inst
+Estado morto: 11512 inst
+Estado pronto: 6 vezes
+Estado pronto: 4713 inst
+Estado bloqueado: 5 vezes
+Estado bloqueado: 287 inst
+Estado executando: 592 vezes
+Estado executando: 10119 inst
+Preempcoes: 0 vezes
+Tempo medio resposta: 785.500000
+Tempo retorno: 603 inst
 --------------------------------------------
 PID: 2
 Estado morto: 1 vezes
-Estado morto: 11806 inst
-Estado pronto: 20 vezes
-Estado pronto: 7797 inst
-Estado bloqueado: 15 vezes
-Estado bloqueado: 959 inst
-Estado executando: 234 vezes
-Estado executando: 3901 inst
-Preempcoes: 4 vezes
-Tempo medio resposta: 389.850000
-Tempo retorno: 269 inst
+Estado morto: 9703 inst
+Estado pronto: 18 vezes
+Estado pronto: 11845 inst
+Estado bloqueado: 17 vezes
+Estado bloqueado: 955 inst
+Estado executando: 306 vezes
+Estado executando: 4117 inst
+Preempcoes: 0 vezes
+Tempo medio resposta: 658.055556
+Tempo retorno: 341 inst
 --------------------------------------------
 PID: 3
 Estado morto: 1 vezes
-Estado morto: 350 inst
-Estado pronto: 116 vezes
-Estado pronto: 11570 inst
-Estado bloqueado: 112 vezes
-Estado bloqueado: 6652 inst
-Estado executando: 350 vezes
-Estado executando: 5883 inst
-Preempcoes: 3 vezes
-Tempo medio resposta: 99.741379
-Tempo retorno: 578 inst
+Estado morto: 370 inst
+Estado pronto: 132 vezes
+Estado pronto: 13724 inst
+Estado bloqueado: 131 vezes
+Estado bloqueado: 6452 inst
+Estado executando: 411 vezes
+Estado executando: 6066 inst
+Preempcoes: 0 vezes
+Tempo medio resposta: 103.969697
+Tempo retorno: 674 inst
